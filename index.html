@@ -1,40 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FRANCOLOR S.A.S. | Nuestros Trabajos</title>
+
 <style>
-body{
-    font-family:Arial,sans-serif;
+
+*{
     margin:0;
-    background:#f5f5f5;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.trabajos{
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url('images/banner.jpg');
+    background-size:cover;
+    background-position:center;
+    height:420px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+.container{
+    width:90%;
     max-width:1200px;
     margin:auto;
-    padding:40px 20px;
+    padding:60px 0;
 }
 
-.titulo-seccion{
+.section-title{
     text-align:center;
     margin-bottom:50px;
 }
 
+.section-title h2{
+    color:#0d4f9c;
+    margin-bottom:15px;
+    font-size:38px;
+}
+
+.section-title p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.7;
+}
+
 .proyecto{
     background:white;
-    padding:25px;
-    margin-bottom:40px;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    margin-bottom:50px;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.10);
+}
+
+.proyecto-info{
+    padding:30px;
+}
+
+.proyecto-info h3{
+    color:#0d4f9c;
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.proyecto-info p{
+    line-height:1.8;
 }
 
 .galeria{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:15px;
-    margin-top:20px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:10px;
+    padding:10px;
 }
 
 .galeria img{
     width:100%;
-    height:250px;
+    height:260px;
     object-fit:cover;
-    border-radius:8px;
+    border-radius:10px;
+    transition:.3s;
 }
+
+.galeria img:hover{
+    transform:scale(1.03);
+}
+
+.footer{
+    background:#0d4f9c;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.section-title h2{
+    font-size:30px;
+}
+
+}
+
 </style>
+
+</head>
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+<h1>FRANCOLOR S.A.S.</h1>
+<p>Construcción, acabados arquitectónicos, pintura e impermeabilización</p>
+</div>
+
+</section>
+
+<div class="container">
+
+<div class="section-title">
+<h2>Nuestros Trabajos</h2>
+
+<p>
+Con más de 20 años de experiencia, FRANCOLOR S.A.S.
+ha participado en proyectos residenciales, comerciales
+e institucionales ofreciendo calidad, cumplimiento y
+excelentes acabados en cada obra ejecutada.
+</p>
+</div>
+
+
+<!-- PROYECTO 1 -->
+
+<div class="proyecto">
+
+<div class="proyecto-info">
+<h3>Mandala DIYCO</h3>
+
+<p>
+Aplicación de estuco, pintura y acabados arquitectónicos
+para fachadas y áreas comunes, garantizando una excelente
+presentación estética y protección de las superficies.
+</p>
+</div>
+
+<div class="galeria">
+<img src="images/mandala1.jpg" alt="">
+<img src="images/mandala2.jpg" alt="">
+<img src="images/mandala3.jpg" alt="">
+<img src="images/mandala4.jpg" alt="">
+</div>
+
+</div>
+
+
+<!-- PROYECTO 2 -->
+
+<div class="proyecto">
+
+<div class="proyecto-info">
+<h3>Puente Alto</h3>
+
+<p>
+Ejecución de acabados arquitectónicos, aplicación de pintura,
+estuco e intervención de elementos constructivos para mejorar
+la apariencia y durabilidad del proyecto.
+</p>
+</div>
+
+<div class="galeria">
+<img src="images/puentealto1.jpg" alt="">
+<img src="images/puentealto2.jpg" alt="">
+<img src="images/puentealto3.jpg" alt="">
+<img src="images/puentealto4.jpg" alt="">
+</div>
+
+</div>
+
+
+<!-- PROYECTO 3 -->
+
+<div class="proyecto">
+
+<div class="proyecto-info">
+<h3>Pintura y Acabados</h3>
+
+<p>
+Aplicación profesional de sistemas de pintura interior
+y exterior, acabados decorativos y protección de fachadas.
+</p>
+</div>
+
+<div class="galeria">
+<img src="images/pintura1.jpg" alt="">
+<img src="images/pintura2.jpg" alt="">
+<img src="images/pintura3.jpg" alt="">
+<img src="images/pintura4.jpg" alt="">
+</div>
+
+</div>
+
+
+<!-- PROYECTO 4 -->
+
+<div class="proyecto">
+
+<div class="proyecto-info">
+<h3>Impermeabilización</h3>
+
+<p>
+Soluciones para cubiertas, terrazas y fachadas,
+protegiendo las estructuras contra filtraciones
+y humedad.
+</p>
+</div>
+
+<div class="galeria">
+<img src="images/imper1.jpg" alt="">
+<img src="images/imper2.jpg" alt="">
+<img src="images/imper3.jpg" alt="">
+<img src="images/imper4.jpg" alt="">
+</div>
+
+</div>
+
+
+<!-- PROYECTO 5 -->
+
+<div class="proyecto">
+
+<div class="proyecto-info">
+<h3>Obras y Remodelaciones</h3>
+
+<p>
+Adecuación y remodelación de espacios residenciales
+y comerciales mediante soluciones constructivas
+adaptadas a las necesidades del cliente.
+</p>
+</div>
+
+<div class="galeria">
+<img src="images/obra1.jpg" alt="">
+<img src="images/obra2.jpg" alt="">
+<img src="images/obra3.jpg" alt="">
+<img src="images/obra4.jpg" alt="">
+</div>
+
+</div>
+
+</div>
+
+<footer class="footer">
+
+<h3>FRANCOLOR S.A.S.</h3>
+
+<p>
+Construcción • Pintura • Estuco • Impermeabilización • Acabados
+</p>
+
+</footer>
+
+</body>
+</html>
