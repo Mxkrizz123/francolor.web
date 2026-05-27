@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FRANCOLOR S.A.S. | Nuestros Trabajos</title>
+<title>FRANCOLOR S.A.S. | Trabajos Realizados</title>
 
 <style>
 
@@ -16,33 +16,32 @@
 body{
     font-family:Arial, Helvetica, sans-serif;
     background:#f5f5f5;
-    color:#333;
+    color:#000;
 }
 
 .hero{
-    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url('images/banner.jpg');
-    background-size:cover;
-    background-position:center;
-    height:420px;
+    background:#d60000;
+    height:450px;
     display:flex;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
     text-align:center;
 }
 
 .hero-content{
     color:white;
+    max-width:800px;
     padding:20px;
 }
 
 .hero h1{
     font-size:60px;
-    margin-bottom:15px;
+    margin-bottom:20px;
 }
 
 .hero p{
     font-size:20px;
+    line-height:1.6;
 }
 
 .container{
@@ -54,37 +53,47 @@ body{
 
 .section-title{
     text-align:center;
-    margin-bottom:50px;
+    margin-bottom:60px;
 }
 
 .section-title h2{
-    color:#0d4f9c;
+    color:#d60000;
+    font-size:42px;
     margin-bottom:15px;
-    font-size:38px;
 }
 
 .section-title p{
     max-width:800px;
     margin:auto;
-    line-height:1.7;
+    line-height:1.8;
 }
 
 .proyecto{
     background:white;
-    margin-bottom:50px;
-    border-radius:15px;
+    border-radius:20px;
     overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,.10);
+    margin-bottom:60px;
+    box-shadow:0 10px 30px rgba(0,0,0,.10);
+    transition:.3s;
+}
+
+.proyecto:hover{
+    transform:translateY(-5px);
 }
 
 .proyecto-info{
-    padding:30px;
+    padding:35px;
 }
 
 .proyecto-info h3{
-    color:#0d4f9c;
+    color:#d60000;
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.cliente{
+    font-weight:bold;
     margin-bottom:15px;
-    font-size:28px;
 }
 
 .proyecto-info p{
@@ -94,16 +103,17 @@ body{
 .galeria{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:10px;
-    padding:10px;
+    gap:15px;
+    padding:20px;
 }
 
 .galeria img{
     width:100%;
-    height:260px;
+    aspect-ratio:4/3;
+    max-height:320px;
     object-fit:cover;
     border-radius:10px;
-    transition:.3s;
+    transition:.4s;
 }
 
 .galeria img:hover{
@@ -111,14 +121,17 @@ body{
 }
 
 .footer{
-    background:#0d4f9c;
+    background:#d60000;
     color:white;
     text-align:center;
-    padding:30px;
-    margin-top:40px;
+    padding:40px 20px;
 }
 
 @media(max-width:768px){
+
+.hero{
+    height:350px;
+}
 
 .hero h1{
     font-size:40px;
@@ -132,18 +145,31 @@ body{
     font-size:30px;
 }
 
+.proyecto-info h3{
+    font-size:24px;
+}
+
+.galeria img{
+    height:240px;
+}
+
 }
 
 </style>
-
 </head>
+
 <body>
 
 <section class="hero">
 
 <div class="hero-content">
 <h1>FRANCOLOR S.A.S.</h1>
-<p>Construcción, acabados arquitectónicos, pintura e impermeabilización</p>
+<p style="color: #000000;">
+Más de 20 años desarrollando proyectos de construcción,
+obra civil, acabados arquitectónicos, pintura,
+impermeabilización y sistemas livianos.
+</p>
+
 </div>
 
 </section>
@@ -151,131 +177,105 @@ body{
 <div class="container">
 
 <div class="section-title">
-<h2>Nuestros Trabajos</h2>
+
+<h2>Trabajos Realizados</h2>
 
 <p>
-Con más de 20 años de experiencia, FRANCOLOR S.A.S.
-ha participado en proyectos residenciales, comerciales
-e institucionales ofreciendo calidad, cumplimiento y
-excelentes acabados en cada obra ejecutada.
+Con experiencia en proyectos residenciales, comerciales e institucionales,
+FRANCOLOR S.A.S. ofrece soluciones integrales de construcción y acabados,
+garantizando calidad, cumplimiento y excelentes resultados.
 </p>
+
 </div>
 
 
-<!-- PROYECTO 1 -->
+<!-- PROYECTO COLOMBO -->
 
 <div class="proyecto">
 
 <div class="proyecto-info">
+
+<h3>Reforma Segundo Piso Colombo Ibagué</h3>
+
+<div class="cliente">
+Cliente: Colegio Colombo Americano
+</div>
+
+<p>
+Diseño arquitectónico y ampliación de salones en el segundo nivel mediante
+sistema constructivo liviano, incluyendo adecuaciones interiores,
+acabados y estructuras complementarias.
+</p>
+
+</div>
+
+<div class="galeria">
+
+<img src="images/extracted_1.jpg" alt="Imagen 1 del PDF">
+<img src="images/extracted_2.jpg" alt="Imagen 2 del PDF">
+<img src="images/extracted_5.jpg" alt="Imagen 5 del PDF">
+<img src="images/extracted_6.jpg" alt="Imagen 6 del PDF">
+<img src="images/extracted_7.jpg" alt="Imagen 7 del PDF">
+<img src="images/extracted_8.jpg" alt="Imagen 8 del PDF">
+<img src="images/extracted_9.jpg" alt="Imagen 9 del PDF">
+<img src="images/extracted_10.jpg" alt="Imagen 10 del PDF">
+<img src="images/extracted_11.jpg" alt="Imagen 11 del PDF">
+<img src="images/extracted_12.jpg" alt="Imagen 12 del PDF">
+
+</div>
+
+</div>
+
+
+<!-- PROYECTO MANDALA -->
+
+<div class="proyecto">
+
+<div class="proyecto-info">
+
 <h3>Mandala DIYCO</h3>
 
+<div class="cliente">
+Cliente: Constructora DYCO S.A.S.
+</div>
+
 <p>
-Aplicación de estuco, pintura y acabados arquitectónicos
-para fachadas y áreas comunes, garantizando una excelente
-presentación estética y protección de las superficies.
+Aplicación de estuco, tres manos de pintura y recubrimiento con
+Graniplast hidrofugado en fachadas, garantizando protección duradera
+y acabados arquitectónicos de alta calidad.
 </p>
+
 </div>
 
 <div class="galeria">
-<img src="images/mandala1.jpg" alt="">
-<img src="images/mandala2.jpg" alt="">
-<img src="images/mandala3.jpg" alt="">
-<img src="images/mandala4.jpg" alt="">
-</div>
+
+<img src="images/extracted_13.jpg" alt="Imagen 13 del PDF">
+<img src="images/extracted_14.jpg" alt="Imagen 14 del PDF">
+<img src="images/extracted_3.jpg" alt="Imagen 3 del PDF">
+<img src="images/extracted_4.jpg" alt="Imagen 4 del PDF">
 
 </div>
 
+</div>
 
-<!-- PROYECTO 2 -->
+
+<!-- SERVICIOS -->
 
 <div class="proyecto">
 
 <div class="proyecto-info">
-<h3>Puente Alto</h3>
+
+<h3>Servicios Especializados</h3>
 
 <p>
-Ejecución de acabados arquitectónicos, aplicación de pintura,
-estuco e intervención de elementos constructivos para mejorar
-la apariencia y durabilidad del proyecto.
+✓ Sistemas livianos Drywall y Superboard<br><br>
+✓ Mantenimiento de terrazas<br><br>
+✓ Impermeabilización de cubiertas y fachadas<br><br>
+✓ Obra blanca y acabados arquitectónicos<br><br>
+✓ Obra gris y estructuras en concreto<br><br>
+✓ Pintura interior y exterior
 </p>
-</div>
 
-<div class="galeria">
-<img src="images/puentealto1.jpg" alt="">
-<img src="images/puentealto2.jpg" alt="">
-<img src="images/puentealto3.jpg" alt="">
-<img src="images/puentealto4.jpg" alt="">
-</div>
-
-</div>
-
-
-<!-- PROYECTO 3 -->
-
-<div class="proyecto">
-
-<div class="proyecto-info">
-<h3>Pintura y Acabados</h3>
-
-<p>
-Aplicación profesional de sistemas de pintura interior
-y exterior, acabados decorativos y protección de fachadas.
-</p>
-</div>
-
-<div class="galeria">
-<img src="images/pintura1.jpg" alt="">
-<img src="images/pintura2.jpg" alt="">
-<img src="images/pintura3.jpg" alt="">
-<img src="images/pintura4.jpg" alt="">
-</div>
-
-</div>
-
-
-<!-- PROYECTO 4 -->
-
-<div class="proyecto">
-
-<div class="proyecto-info">
-<h3>Impermeabilización</h3>
-
-<p>
-Soluciones para cubiertas, terrazas y fachadas,
-protegiendo las estructuras contra filtraciones
-y humedad.
-</p>
-</div>
-
-<div class="galeria">
-<img src="images/imper1.jpg" alt="">
-<img src="images/imper2.jpg" alt="">
-<img src="images/imper3.jpg" alt="">
-<img src="images/imper4.jpg" alt="">
-</div>
-
-</div>
-
-
-<!-- PROYECTO 5 -->
-
-<div class="proyecto">
-
-<div class="proyecto-info">
-<h3>Obras y Remodelaciones</h3>
-
-<p>
-Adecuación y remodelación de espacios residenciales
-y comerciales mediante soluciones constructivas
-adaptadas a las necesidades del cliente.
-</p>
-</div>
-
-<div class="galeria">
-<img src="images/obra1.jpg" alt="">
-<img src="images/obra2.jpg" alt="">
-<img src="images/obra3.jpg" alt="">
-<img src="images/obra4.jpg" alt="">
 </div>
 
 </div>
@@ -284,10 +284,10 @@ adaptadas a las necesidades del cliente.
 
 <footer class="footer">
 
-<h3>FRANCOLOR S.A.S.</h3>
+<h2>FRANCOLOR S.A.S.</h2>
 
 <p>
-Construcción • Pintura • Estuco • Impermeabilización • Acabados
+Construcción • Obra Civil • Pintura • Impermeabilización • Sistemas Livianos
 </p>
 
 </footer>
